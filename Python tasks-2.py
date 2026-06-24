@@ -28,11 +28,11 @@ print("average:",(a+b+c+d+e)/5)
 
 #8
 a=int(input("enter a value:"))
-print("the square of a is:",a**2)
+print("the square of number is:",a**2)
 
 #9
 a=int(input("enter a number:"))
-print("the cube of a is:",a**3)
+print("the cube of number is:",a**3)
 
 #11
 x=int(input("enter a no:"))
