@@ -39,7 +39,70 @@ power_of_number(5)
 
 #13
 s=lambda n:n*n
-print(s(int(input("enter a no:"))))'''
+print(s(int(input("enter a no:"))))
+
+#16
+n=[1,2,3,4,5,6]
+m=list(map(lambda a:a*a,n))
+print(m)
+
+#17
+n=[1,4,9,16,25,36,49,64,81,100]
+m=list(filter(lambda a:a%2!=1,n))
+print(m)
+
+#18
+n=[1,8,27,64,125,216,343,512,729,1000]
+m=list(filter(lambda a:a>100,n))
+print(m)
+
+#20
+def fibonacci_series(N):
+    if N==0:
+        return 0
+    if N==1:
+        return 1
+    else:
+        return fibonacci_series(N-2)+fibonacci_series(N-1)
+N=int(input("Enter no of terms:"))
+for i in range(N):
+    print(fibonacci_series(i),end="")
+
+#19
+x=int(input("enter base:"))
+y=int(input("enter exponent:"))
+def power(x,y):
+    if y==1:
+        return x
+    else:
+        return x*power(x,y-1)
+print(power(x,y))
+
+#14
+a=int(input("Enter no:"))
+b=int(input("Enter no:"))
+L=lambda a,b:a if a>b else b
+print(L(a,b))
+
+#15
+c=[0,5,10,15,20]
+f=list(map(lambda t:t*(9/5)+32,c))
+print("Temperature in fahrenheit is:",f)
+
+#4
+a=int(input("Enter no:"))
+b=int(input("Enter no:"))
+c=int(input("Enter no:"))
+def max(a,b,c):
+    if a>b and a>c:
+        return(a)
+    elif b>c and b>a:
+        return(b)
+    else:
+        return(c)
+p=max(a,b,c)
+print(p)'''
+
 
 
 
